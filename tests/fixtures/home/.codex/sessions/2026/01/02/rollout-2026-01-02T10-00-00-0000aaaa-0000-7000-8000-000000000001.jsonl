@@ -1,0 +1,6 @@
+{"timestamp":"2026-01-02T01:00:00Z","type":"session_meta","payload":{"id":"0000aaaa-0000-7000-8000-000000000001","cwd":"/tmp/demo","thread_source":"user"}}
+{"timestamp":"2026-01-02T01:00:01Z","type":"turn_context","payload":{"model":"gpt-test-1"}}
+{"timestamp":"2026-01-02T01:00:02Z","type":"event_msg","payload":{"type":"item_completed","item":{"type":"UserMessage","id":"u1","content":[{"type":"text","text":"<environment_context>\n  <cwd>/tmp/demo</cwd>\n</environment_context>\nテストを足して"}]}}}
+{"timestamp":"2026-01-02T01:00:03Z","type":"event_msg","payload":{"type":"item_completed","item":{"type":"Reasoning","id":"r1","summary_text":[]}}}
+{"timestamp":"2026-01-02T01:00:04Z","type":"event_msg","payload":{"type":"item_completed","item":{"type":"AgentMessage","id":"a1","phase":"commentary","content":[{"type":"Text","text":"既存のテストを見ます。"}]}}}
+{"timestamp":"2026-01-02T01:00:05Z","type":"event_msg","payload":{"type":"item_completed","item":{"type":"CommandExecution","id":"c1","command":["/bin/zsh","-lc","pytest -q"],"aggregated_output":"1 passed\n"}}}

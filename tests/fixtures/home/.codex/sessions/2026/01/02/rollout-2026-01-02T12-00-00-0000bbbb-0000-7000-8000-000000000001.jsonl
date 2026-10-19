@@ -1,0 +1,2 @@
+{"timestamp":"2026-01-02T03:00:00Z","type":"session_meta","payload":{"id":"0000bbbb-0000-7000-8000-000000000001","cwd":"/tmp/demo","thread_source":"guardian"}}
+{"timestamp":"2026-01-02T03:00:01Z","type":"event_msg","payload":{"type":"item_completed","item":{"type":"UserMessage","id":"g1","content":[{"type":"text","text":"The following is the Codex agent history"}]}}}

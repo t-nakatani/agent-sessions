@@ -1,0 +1,11 @@
+{"type":"session","version":3,"id":"0000dddd-0000-7000-8000-000000000001","timestamp":"2026-01-02T04:00:00Z","cwd":"/tmp/demo"}
+{"type":"model_change","id":"e1","parentId":null,"timestamp":"2026-01-02T04:00:00Z","provider":"test","modelId":"pi-test"}
+{"type":"message","id":"e2","parentId":"e1","timestamp":"2026-01-02T04:00:01Z","message":{"role":"system","content":"システムの指示"}}
+{"type":"message","id":"e3","parentId":"e2","timestamp":"2026-01-02T04:00:02Z","message":{"role":"user","content":[{"type":"text","text":"捨てた質問"}]}}
+{"type":"message","id":"e4","parentId":"e3","timestamp":"2026-01-02T04:00:03Z","message":{"role":"assistant","content":[{"type":"text","text":"捨てた回答"}]}}
+{"type":"message","id":"e5","parentId":"e2","timestamp":"2026-01-02T04:01:00Z","message":{"role":"user","content":[{"type":"text","text":"重いプロセスを止めて"},{"type":"image","data":""}]}}
+{"type":"message","id":"e6","parentId":"e5","timestamp":"2026-01-02T04:01:01Z","message":{"role":"assistant","content":[{"type":"thinking","thinking":"考え中"},{"type":"text","text":"調べます。","textSignature":"{\"v\":1,\"phase\":\"commentary\"}"},{"type":"toolCall","id":"tc1","name":"bash","arguments":{"command":"ps aux"}}]}}
+{"type":"message","id":"e7","parentId":"e6","timestamp":"2026-01-02T04:01:02Z","message":{"role":"toolResult","toolCallId":"tc1","toolName":"bash","content":[{"type":"text","text":"PID 123 heavy"}]}}
+{"type":"message","id":"e8","parentId":"e7","timestamp":"2026-01-02T04:01:03Z","message":{"role":"bashExecution","command":"kill 123","output":"","exitCode":0}}
+{"type":"message","id":"e9","parentId":"e8","timestamp":"2026-01-02T04:01:04Z","message":{"role":"assistant","content":[{"type":"text","text":"止めました。","textSignature":"{\"v\":1,\"phase\":\"final_answer\"}"}]}}
+{"type":"session_info","id":"e10","parentId":"e9","timestamp":"2026-01-02T04:01:05Z","name":"重いプロセスの停止"}

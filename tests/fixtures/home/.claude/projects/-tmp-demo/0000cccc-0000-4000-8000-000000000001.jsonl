@@ -1,0 +1,15 @@
+{"type":"user","origin":{"kind":"human"},"cwd":"/tmp/demo","timestamp":"2026-01-02T03:00:00Z","message":{"role":"user","content":"<system-reminder>\n自動で差し込まれた文脈\n</system-reminder>\nREADMEを直して"}}
+{"type":"assistant","timestamp":"2026-01-02T03:00:05Z","message":{"id":"m1","role":"assistant","model":"claude-test","content":[{"type":"thinking","thinking":"考え中"}]}}
+{"type":"assistant","timestamp":"2026-01-02T03:00:06Z","message":{"id":"m1","role":"assistant","model":"claude-test","content":[{"type":"text","text":"直します。"}]}}
+{"type":"assistant","timestamp":"2026-01-02T03:00:07Z","message":{"id":"m1","role":"assistant","model":"claude-test","content":[{"type":"tool_use","id":"tu1","name":"Bash","input":{"command":"ls","description":"一覧"}}]}}
+{"type":"user","timestamp":"2026-01-02T03:00:08Z","message":{"role":"user","content":[{"type":"tool_result","tool_use_id":"tu1","content":"README.md\nsrc"}]}}
+{"type":"user","origin":{"kind":"task-notification"},"timestamp":"2026-01-02T03:00:09Z","message":{"role":"user","content":"<task-notification>終わりました</task-notification>"}}
+{"type":"user","isMeta":true,"timestamp":"2026-01-02T03:00:10Z","message":{"role":"user","content":[{"type":"text","text":"Base directory for this skill"}]}}
+{"type":"assistant","isSidechain":true,"timestamp":"2026-01-02T03:00:11Z","message":{"role":"assistant","model":"claude-test","content":[{"type":"text","text":"サブエージェントの発言"}]}}
+{"type":"user","origin":{"kind":"human"},"timestamp":"2026-01-02T03:01:00Z","message":{"role":"user","content":"<command-message>review</command-message>\n<command-name>/review</command-name>\n<command-args>main</command-args>"}}
+{"type":"user","origin":{"kind":"human"},"timestamp":"2026-01-02T03:02:00Z","message":{"role":"user","content":"<bash-input>git status</bash-input>"}}
+{"type":"user","timestamp":"2026-01-02T03:02:01Z","message":{"role":"user","content":"<bash-stdout>clean</bash-stdout><bash-stderr></bash-stderr>"}}
+{"type":"user","isCompactSummary":true,"timestamp":"2026-01-02T03:03:00Z","message":{"role":"user","content":"This session is being continued from a previous conversation"}}
+{"type":"user","timestamp":"2026-01-02T03:04:00Z","message":{"role":"user","content":[{"type":"text","text":"古い版の発言"},{"type":"image","source":{}}]}}
+{"type":"assistant","timestamp":"2026-01-02T03:04:05Z","message":{"role":"assistant","model":"<synthetic>","content":[{"type":"text","text":"終わりました。"}]}}
+{"type":"ai-title","aiTitle":"README の修正","sessionId":"0000cccc-0000-4000-8000-000000000001"}

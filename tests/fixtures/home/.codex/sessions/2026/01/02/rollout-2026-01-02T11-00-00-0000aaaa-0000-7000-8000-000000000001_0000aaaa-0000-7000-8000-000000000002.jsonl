@@ -1,0 +1,8 @@
+{"timestamp":"2026-01-02T02:00:00Z","type":"session_meta","payload":{"id":"0000aaaa-0000-7000-8000-000000000001","cwd":"/tmp/demo","thread_source":"user"}}
+{"timestamp":"2026-01-02T02:00:01Z","type":"turn_context","payload":{"model":"gpt-test-2"}}
+{"timestamp":"2026-01-02T01:00:04Z","type":"event_msg","payload":{"type":"item_completed","item":{"type":"AgentMessage","id":"a1","phase":"commentary","content":[{"type":"Text","text":"既存のテストを見ます。"}]}}}
+{"timestamp":"2026-01-02T02:00:02Z","type":"event_msg","payload":{"type":"item_completed","item":{"type":"UserMessage","id":"u2","content":[{"type":"text","text":"<heartbeat>\n  <instructions>\n毎朝テストの結果を確認する\n  </instructions>\n</heartbeat>"}]}}}
+{"timestamp":"2026-01-02T02:00:03Z","type":"event_msg","payload":{"type":"item_completed","item":{"type":"UserMessage","id":"u3","content":[{"type":"text","text":"<send_user_message_question_reply>\n[{\"question\":\"どちらで進めますか？\",\"answer\":\"小さく\"}]\n</send_user_message_question_reply>\n"}]}}}
+{"timestamp":"2026-01-02T02:00:04Z","type":"event_msg","payload":{"type":"item_completed","item":{"type":"UserMessage","id":"u4","content":[{"type":"text","text":"\n# Files mentioned by the user:\n\n## a.png: /tmp/a.png\n\n## My request:\nこの画像も見て\n"}]}}}
+{"timestamp":"2026-01-02T02:00:05Z","type":"event_msg","payload":{"type":"item_completed","item":{"type":"McpToolCall","id":"t1","server":"docs","tool":"search","arguments":{"query":"pytest"},"result":{"content":[{"type":"text","text":"3件"}]}}}}
+{"timestamp":"2026-01-02T02:00:06Z","type":"event_msg","payload":{"type":"item_completed","item":{"type":"AgentMessage","id":"a2","phase":"final_answer","content":[{"type":"Text","text":"テストを足しました。"}]}}}

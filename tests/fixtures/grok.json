@@ -1,0 +1,23 @@
+{
+ "sand.client.slice.account.test.roster.last-roster": {
+  "schemaVersion": "1",
+  "value": {
+   "rows": [
+    {"id": "0000eeee-0000-4000-8000-000000000001", "name": "pearl", "path": "/bots/pearl", "lastActivityAt": 1767326400000, "lastEntry": {"text": "監視を始めました"}},
+    {"id": "0000eeee-0000-4000-8000-000000000002", "name": "眠っているボット"}
+   ]
+  }
+ },
+ "sand.client.slice.account.test.transcript.replicas.0000eeee-0000-4000-8000-000000000001": {
+  "schemaVersion": "1",
+  "value": {
+   "entries": [
+    {"kind": "send-message", "id": "s3", "message": {"type": "text", "content": "監視を始めました"}, "timestampMs": 1767326400000, "seq": 3},
+    {"kind": "message", "id": "s1", "role": "user", "content": "ボットを見張って", "timestampMs": 1767326300000, "seq": 1},
+    {"kind": "send-message", "id": "s2", "message": {"type": "widget", "widget": {"prompt": "どの間隔にしますか？", "options": [{"label": "毎時"}, {"label": "毎日"}]}}, "timestampMs": 1767326350000, "seq": 2},
+    {"kind": "event", "id": "s4", "event": {"type": "automation-changed"}, "timestampMs": 1767326410000, "seq": 4},
+    {"kind": "mcp-app", "id": "s5", "toolName": "search_posts", "toolArgumentsJson": "{\"query\": \"bot\"}", "toolResultJson": "{\"data\": []}", "timestampMs": 1767326420000, "seq": 5}
+   ]
+  }
+ }
+}
